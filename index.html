@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src 'self' data:; style-src 'self' 'unsafe-inline'; script-src 'self'; object-src 'none'; base-uri 'self'; frame-ancestors 'none'; form-action 'self'; upgrade-insecure-requests;" />
+  <meta http-equiv="X-Content-Type-Options" content="nosniff" />
+  <meta http-equiv="Referrer-Policy" content="strict-origin-when-cross-origin" />
+  <meta http-equiv="Permissions-Policy" content="camera=(), microphone=(), geolocation=()" />
+  <title>ULLS Logistics - Port Permit</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      background: #f3f4f6;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      padding: 20px;
+      color: #111827;
+    }
+
+    .container {
+      width: 100%;
+      max-width: 1200px;
+      background: #ffffff;
+      border: 2px solid #cfcfcf;
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+    }
+
+    .image-wrapper {
+      position: relative;
+      width: 100%;
+      overflow: hidden;
+      background: #fff;
+    }
+
+    .image-wrapper img {
+      width: 100%;
+      height: auto;
+      display: block;
+      object-fit: contain;
+    }
+
+    .overlay {
+      position: absolute;
+      inset: 0;
+      pointer-events: none;
+      background: linear-gradient(
+        to bottom,
+        rgba(255,255,255,0.01),
+        rgba(255,255,255,0.01)
+      );
+    }
+
+    .footer {
+      padding: 16px;
+      text-align: center;
+      background: #0f172a;
+      color: #ffffff;
+      font-size: 14px;
+      letter-spacing: 0.3px;
+    }
+
+    .footer strong {
+      color: #38bdf8;
+    }
+
+    /* Tablet */
+    @media (max-width: 992px) {
+      body {
+        padding: 15px;
+      }
+
+      .container {
+        border-radius: 10px;
+      }
+
+      .footer {
+        font-size: 13px;
+        padding: 14px;
+      }
+    }
+
+    /* Mobile */
+    @media (max-width: 600px) {
+      body {
+        padding: 10px;
+      }
+
+      .container {
+        border-radius: 8px;
+      }
+
+      .footer {
+        font-size: 12px;
+        line-height: 1.6;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <main class="container">
+    <section class="image-wrapper">
+      <!-- Replace image path with your uploaded file -->
+      <img src="1.jpeg" alt="ULLS Logistics Permit" loading="lazy" />
+      <div class="overlay"></div>
+    </section>
+
+    <footer class="footer">
+      <strong>ULLS Logistics</strong> | Responsive Secure Web Display
+    </footer>
+  </main>
+
+  <!--
+    SECURITY RECOMMENDATIONS
+    -------------------------------------------------
+    1. Host the website using HTTPS with SSL certificate.
+    2. Disable directory listing on the web server.
+    3. Keep server OS and web server patched.
+    4. Use Web Application Firewall (WAF).
+    5. Enable automatic backups and monitoring.
+    6. Use strong admin passwords and MFA.
+    7. Restrict file upload permissions.
+    8. Set correct file permissions:
+       - HTML: Read Only
+       - Images: Read Only
+    9. Enable rate limiting and DDoS protection.
+    10. Use server-side security headers.
+  -->
+
+</body>
+</html>
